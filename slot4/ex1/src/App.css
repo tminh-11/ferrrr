@@ -37,3 +37,12 @@
   }
 }
 
+CSS.nav-link.active {
+  color: #dc3545 !important;      /* màu danger */
+  font-weight: bold;
+  border-bottom: 3px solid #dc3545;  /* gạch chân đẹp */
+}
+
+.nav-link:hover {
+  color: #ff6b6b !important;
+}
