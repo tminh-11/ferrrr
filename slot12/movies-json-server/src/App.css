@@ -1,0 +1,217 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App container */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #141414 100%);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(255, 0, 76, 0.15);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin: 2.5rem 0 1.5rem;
+}
+
+/* Buttons - cinematic style */
+.btn-primary,
+.btn-success,
+.btn-warning,
+.btn-danger {
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #e50914, #ff2d55);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #ff2d55, #e50914);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(229, 9, 20, 0.35);
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #00c853, #64dd17);
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 200, 83, 0.35);
+}
+
+.btn-warning {
+  background: #ffab00;
+  color: #121212;
+}
+
+.btn-danger {
+  background: #d32f2f;
+}
+
+/* Cards & Containers */
+.border,
+.card,
+.form-container {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.border:hover,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(229, 9, 20, 0.12);
+}
+
+/* Table - cinematic look */
+.table {
+  --bs-table-bg: #141414;
+  --bs-table-color: #e0e0e0;
+  --bs-table-border-color: #2a2a2a;
+  --bs-table-striped-bg: #1e1e1e;
+  --bs-table-striped-color: #f0f0f0;
+  --bs-table-hover-bg: #252525;
+}
+
+.table thead th {
+  background: #0f0f0f;
+  color: #ff2d55;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  border-bottom: 2px solid #e50914;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Form controls */
+.form-control,
+.form-select {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #f0f0f0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #222;
+  border-color: #e50914;
+  box-shadow: 0 0 0 0.25rem rgba(229, 9, 20, 0.25);
+  color: #ffffff;
+}
+
+.form-label {
+  color: #cccccc;
+  font-weight: 500;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #181818;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: #e0e0e0;
+}
+
+.modal-header {
+  border-bottom: 1px solid #333;
+}
+
+.modal-title {
+  color: #ffffff;
+}
+
+.modal-footer {
+  border-top: 1px solid #333;
+}
+
+/* Navbar - dark cinematic */
+.navbar {
+  background: rgba(15, 15, 15, 0.92) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #222;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ff2d55 !important;
+  letter-spacing: -1px;
+}
+
+.nav-link {
+  color: #cccccc !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Filter bar */
+.filter-bar .form-control,
+.filter-bar .form-select {
+  background: #1e1e1e;
+  border-color: #444;
+}
+
+/* Remove default CRA spinning logo animation (optional) */
+.App-logo {
+  display: none; /* or keep it if you want a small logo somewhere */
+}
+
+/* Utility classes */
+.text-red {
+  color: #e50914;
+}
+
+.text-gold {
+  color: #ffab00;
+}
+
+.shadow-glow-red {
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.18);
+}
