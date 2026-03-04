@@ -1,0 +1,110 @@
+/* Custom Card cho Login & Detail */
+.card {
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #fff !important;
+  border-bottom: 1px solid #e3e6f0 !important;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding: 1.25rem !important;
+}
+
+/* Hiệu ứng cho Form Input */
+.form-control {
+  border-radius: 8px !important;
+  padding: 0.6rem 1rem !important;
+  border: 1px solid #d1d3e2 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #bac8f3 !important;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25) !important;
+}
+
+/* Làm đẹp Bảng (Table) */
+.table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: var(--card-shadow);
+}
+
+.table thead th {
+  background-color: #f8f9fc !important;
+  color: #4e73df !important;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem !important;
+  border-bottom: 2px solid #e3e6f0 !important;
+}
+
+.table tbody td {
+  padding: 1rem !important;
+  vertical-align: middle !important;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f3f9 !important;
+  transition: background-color 0.2s ease;
+}
+
+/* Nút bấm (Buttons) */
+.btn {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.2rem !important;
+  transition: transform 0.1s ease, box-shadow 0.2s ease !important;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+.btn-primary {
+  background-color: #4e73df !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9 !important;
+  box-shadow: 0 4px 12px rgba(78, 115, 223, 0.3) !important;
+}
+
+/* Status Badges (Tự động hóa bằng CSS) */
+/* Nếu bạn muốn text Active/Locked có màu đẹp hơn */
+td:contains("active") {
+  color: #1cc88a;
+  font-weight: bold;
+}
+
+/* Avatar styling */
+img.rounded-circle {
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+img.rounded-circle:hover {
+  transform: scale(1.2);
+}
+
+/* Toast & Modal */
+.modal-content {
+  border: none !important;
+  border-radius: 15px !important;
+}
+
+.toast {
+  border-radius: 10px !important;
+  border: none !important;
+}
