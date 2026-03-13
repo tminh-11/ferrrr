@@ -1,32 +1,31 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { BudgetProvider } from './contexts/BudgetContext';
-import Login from './pages/Login';
-import Home from './pages/Home';
-
-// Import CSS của Bootstrap
+import logo from './logo.svg';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginForm from './components/LoginForm';
+import { AuthProvider } from './contexts/AuthContext';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import ProtectedRoute from './routes/ProtectedRoute';
+import ExpensesDashboard  from './components/ExpensesDashboard';
 
 function App() {
-  return (
-    <BudgetProvider>
-      <BrowserRouter>
-        <Routes>
-          {/* 1. Trang mặc định: Tự động chuyển hướng về /login */}
-          <Route path="/" element={<Navigate to="/login" replace />} />
+  return (
+    <AuthProvider>
+      <BrowserRouter>
+      <Routes>
+ <Route path="/login" element={<LoginForm />} /> 
+        {/* Các route khác của bạn sẽ được đặt ở đây */}
+        <Route path= "/" element={
+          <ProtectedRoute>
+              <ExpensesDashboard />
+          </ProtectedRoute> 
+          } />
+        </Routes>
+     
 
-          {/* 2. Route dành cho trang Đăng nhập */}
-          <Route path="/login" element={<Login />} />
-
-          {/* 3. Route dành cho trang quản lý Dashboard */}
-          <Route path="/home" element={<Home />} />
-
-          {/* 4. Xử lý các đường dẫn không tồn tại: Quay về login */}
-          <Route path="*" element={<Navigate to="/login" replace />} />
-        </Routes>
-      </BrowserRouter>
-    </BudgetProvider>
-  );
+      </BrowserRouter>
+    </AuthProvider>
+  );
 }
 
 export default App;

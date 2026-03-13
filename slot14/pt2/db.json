@@ -1,4 +1,4 @@
-  {
+{
   "users": [
     {
       "id": "1",
@@ -15,12 +15,12 @@
   ],
   "expenses": [
     {
-      "id": "1",
-      "userId": "1",
       "name": "Lunch",
       "amount": 85000,
       "category": "Food",
-      "date": "2025-10-02"
+      "date": "2025-10-02",
+      "userId": "1",
+      "id": "1"
     },
     {
       "id": "2",
@@ -61,6 +61,30 @@
       "amount": 250000,
       "category": "Utilities",
       "date": "2025-10-03"
+    },
+    {
+      "name": "Pizza",
+      "amount": 240000,
+      "category": "Food",
+      "date": "2026-01-31",
+      "userId": "1",
+      "id": "olZAT2P"
+    },
+    {
+      "name": "Pizza",
+      "amount": 240000,
+      "category": "Food",
+      "date": "2025-01-21",
+      "userId": "1",
+      "id": "5LZz_ZO"
+    },
+    {
+      "name": "Zedd's concert",
+      "amount": 1400000,
+      "category": "Entertainment",
+      "date": "2026-03-31",
+      "userId": "2",
+      "id": "mqLNi_5"
     }
   ]
 }
